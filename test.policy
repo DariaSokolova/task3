@@ -1,0 +1,7 @@
+grant {
+    permission java.lang.RuntimePermission "createClassLoader";
+    permission java.lang.RuntimePermission "closeClassLoader";
+	permission com.epam.mentoring.classloading.security.ClassPathPermission "classloading/semaphore", "load";
+//	permission com.epam.mentoring.classloading.security.ClassPathPermission "evil", "avoid";
+    permission java.io.FilePermission "<<ALL FILES>>", "read";
+};
